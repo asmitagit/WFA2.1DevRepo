@@ -75,7 +75,9 @@ app.get('/login', function(req, res) {
 			   Content: content
     });
 });
-
+// This route receives the posted form.
+// As explained above, usage of 'body-parser' means
+// that `req.body` will be filled in with the form elements
 app.post('/post', function(req, res){
 console.log(req.body);
   var  userName = req.body.userName;
